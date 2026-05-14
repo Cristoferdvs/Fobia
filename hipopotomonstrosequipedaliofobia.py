@@ -64,3 +64,20 @@
 #         print()
 
 #Nah, no vale la pena seguir pensando en eso
+
+#=======================================================================================================
+
+inventario = {
+ "Teclado": 0,
+ "Mouse": 4,
+ "Monitor": 9,
+ "USB": 2
+}
+for producto, cantidad in inventario.items():
+    if cantidad == 0:
+        print(producto, "-> sin stock")
+    elif cantidad > 0 and cantidad <= 5:
+        print(producto, "-> stock bajo")
+    else:
+        print(producto, "-> stock suficiente")
+
